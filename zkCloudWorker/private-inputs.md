@@ -8,13 +8,15 @@ The best countermeasure against this is to verify the cloud worker code. One asp
 
 There is also a proposal using zkCloudWorker exactly attaching this issue: [Enhancing Transparency and Trust in zkApps with zkCloudWorker Contract Verification](https://zkignite.minaprotocol.com/zkignite/zkapp-cohort-3/feedbackandrefinement/suggestion/758)
 
-**Obfuscating or hidding private inputs**
+**Hashing/hidding private inputs**
 
-Private inputs do not always be passed in a "readable" form to a SmartContract. We can "hash" them and passed the hashed values to a Contract.
+Private inputs do not always need to be passed in a "readable" form to a SmartContract. 
 
-For example, we can have a simple contract, using a MerkleMap, that receives (an proves) a hashed key and value, and that the key+value belong to a given collection. See the sample code here for some contract here: 
+We can "hash" them and pass the hashed values to a Contract.
 
-We would implement a zKCloudWorker for proving, can look at example code here:
+For example, we can have a simple contract, using a MerkleMap, that receives (an proves) a hashed key and value, and that the key+value belong to a given collection. See the sample code here for some contract here: [collection-contract.ts](./collection-contract.ts)
+
+We would implement a zKCloudWorker for proving, can look at example code here: [collections-worker.ts](./collections-worker.ts)
 
 And in the App, we will do something like:
 ~~~
