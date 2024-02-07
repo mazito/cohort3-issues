@@ -71,6 +71,9 @@ The best countermeasure against this is to verify the cloud worker code. One asp
 
 There is also a proposal using zkCloudWorker exactly attaching this issue: [Enhancing Transparency and Trust in zkApps with zkCloudWorker Contract Verification](https://zkignite.minaprotocol.com/zkignite/zkapp-cohort-3/feedbackandrefinement/suggestion/758)
 
+
+
+
 **On Fully Homomorphic Encryption**
 
 In certain particular cases it might be possible to use Partial Homomorphic Encryption, and there exists limited support for this in o1js (https://github.com/Trivo25/o1js-elgamal).
